@@ -1,0 +1,148 @@
+{
+  "backend": "offline",
+  "top_k": 5,
+  "splits": {
+    "dev": {
+      "n_claims": 50,
+      "decision_accuracy": 1.0,
+      "per_class": {
+        "covered": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 23
+        },
+        "excluded": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 16
+        },
+        "needs_review": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 11
+        }
+      },
+      "unsafe_approvals": [],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "human_referral_rate": 0.22,
+      "expected_referral_rate": 0.22,
+      "extraction": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "field_accuracy": {
+          "claim_type": 1.0,
+          "incident_date": 1.0,
+          "amount": 1.0,
+          "currency": 1.0,
+          "policy_number": 1.0,
+          "third_party": 1.0
+        }
+      },
+      "errors": [],
+      "latency_ms_per_claim": 2.914122000001953
+    },
+    "holdout": {
+      "n_claims": 10,
+      "decision_accuracy": 0.6,
+      "per_class": {
+        "covered": {
+          "precision": 1.0,
+          "recall": 0.625,
+          "support": 8
+        },
+        "excluded": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "support": 2
+        },
+        "needs_review": {
+          "precision": 0.0,
+          "recall": null,
+          "support": 0
+        }
+      },
+      "unsafe_approvals": [],
+      "citation_precision": 0.8571428571428571,
+      "citation_recall": 0.6,
+      "human_referral_rate": 0.3,
+      "expected_referral_rate": 0.0,
+      "extraction": {
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231,
+        "field_accuracy": {
+          "claim_type": 0.7,
+          "incident_date": 0.9,
+          "amount": 1.0,
+          "currency": 1.0,
+          "policy_number": 1.0,
+          "third_party": 0.8
+        }
+      },
+      "errors": [
+        {
+          "id": "X01",
+          "expected": "covered",
+          "predicted": "needs_review",
+          "expected_articles": [
+            "AUTO-04"
+          ],
+          "cited": [],
+          "reason": "The type of loss could not be identified from the declaration."
+        },
+        {
+          "id": "X03",
+          "expected": "covered",
+          "predicted": "needs_review",
+          "expected_articles": [
+            "HOME-05"
+          ],
+          "cited": [],
+          "reason": "The type of loss could not be identified from the declaration."
+        },
+        {
+          "id": "X04",
+          "expected": "covered",
+          "predicted": "excluded",
+          "expected_articles": [
+            "HOME-03"
+          ],
+          "cited": [
+            "HOME-11"
+          ],
+          "reason": "Exclusion 'Art. 11 \u2014 Exclusion: pets, vermin and mould' applies (claim mentions 'chat')."
+        },
+        {
+          "id": "X07",
+          "expected": "excluded",
+          "predicted": "needs_review",
+          "expected_articles": [
+            "AUTO-10"
+          ],
+          "cited": [],
+          "reason": "The type of loss could not be identified from the declaration."
+        }
+      ],
+      "latency_ms_per_claim": 2.6808499998878688
+    }
+  },
+  "retrieval_ablation": {
+    "bm25": {
+      "recall_at_k": 1.0,
+      "mrr": 0.918560606060606,
+      "n": 44
+    },
+    "tfidf": {
+      "recall_at_k": 1.0,
+      "mrr": 0.9071969696969696,
+      "n": 44
+    },
+    "hybrid": {
+      "recall_at_k": 1.0,
+      "mrr": 0.918560606060606,
+      "n": 44
+    }
+  }
+}
