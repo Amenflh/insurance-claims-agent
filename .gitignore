@@ -1,0 +1,10 @@
+.venv/
+venv/
+.pip-cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+.idea/
+.vscode/
+INTERVIEW_NOTES.md
