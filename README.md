@@ -1,5 +1,7 @@
 # Insurance Claims Agent
 
+[![CI](https://github.com/Amenflh/insurance-claims-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/Amenflh/insurance-claims-agent/actions/workflows/ci.yml)
+
 An agentic pipeline that reads a free-text insurance claim (French or English), extracts the key facts, retrieves the
 relevant clauses of the policy wording, and returns a **coverage decision with cited articles**: `covered`,
 `excluded` or `needs_review`. Guardrails send uncertain or incomplete cases to a human claims handler, and every step
