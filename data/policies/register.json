@@ -1,0 +1,15 @@
+{
+  "_note": "SYNTHETIC policy register (schedules / conditions particulières). No real persons or contracts.",
+  "policies": [
+    {"policy_number": "AUTO-TN-100231", "product": "auto", "start": "2026-01-01", "end": "2026-12-31", "currency": "TND", "review_threshold": 15000},
+    {"policy_number": "AUTO-TN-100587", "product": "auto", "start": "2025-07-01", "end": "2026-06-30", "currency": "TND", "review_threshold": 15000},
+    {"policy_number": "AUTO-TN-101942", "product": "auto", "start": "2026-03-15", "end": "2027-03-14", "currency": "TND", "review_threshold": 15000},
+    {"policy_number": "AUTO-TN-102310", "product": "auto", "start": "2025-01-01", "end": "2025-12-31", "currency": "TND", "review_threshold": 15000},
+    {"policy_number": "HOME-AE-200114", "product": "home", "start": "2026-02-01", "end": "2027-01-31", "currency": "AED", "review_threshold": 100000},
+    {"policy_number": "HOME-FR-200388", "product": "home", "start": "2025-10-01", "end": "2026-09-30", "currency": "EUR", "review_threshold": 25000},
+    {"policy_number": "HOME-AE-200951", "product": "home", "start": "2026-06-01", "end": "2027-05-31", "currency": "AED", "review_threshold": 100000},
+    {"policy_number": "SANTE-TN-300045", "product": "health", "start": "2026-01-01", "end": "2026-12-31", "currency": "TND", "review_threshold": 5000},
+    {"policy_number": "SANTE-TN-300172", "product": "health", "start": "2026-05-01", "end": "2027-04-30", "currency": "TND", "review_threshold": 5000},
+    {"policy_number": "SANTE-TN-300290", "product": "health", "start": "2025-09-01", "end": "2026-08-31", "currency": "TND", "review_threshold": 5000}
+  ]
+}
